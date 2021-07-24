@@ -9,7 +9,7 @@ function App() {
     <p>Hellow Guys Thapa Technical</p>
     <h1>Humail Saleem</h1>
     <p>Hellow Guys</p>
-    
+
     </div>
   );
 }
