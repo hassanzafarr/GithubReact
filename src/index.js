@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Hello from './hello';
+import Header from './components/header'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Img from "./components/img"
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App /> <Hello/>
+     <Header/> <Img/>
   </React.StrictMode>,
   document.getElementById('root')
 );
