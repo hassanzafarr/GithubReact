@@ -21,7 +21,7 @@ function Header(){
             
 
           </BootStrap.Nav>
-          <BootStrap.Form className="d-flex mx-auto">
+          <BootStrap.Form className="d-flex ms-5"> 
             <BootStrap.FormControl
               type="search"
               placeholder="Search"
@@ -32,7 +32,8 @@ function Header(){
             
           </BootStrap.Form>
 
-          <BootStrap.Form className="d-flex">
+
+          <BootStrap.Form className="d-flex ms-5">
             <BootStrap.FormControl
               type="search"
               placeholder="Search"
@@ -49,6 +50,14 @@ function Header(){
 
         </div>
       </BootStrap.Navbar>
+
+
+      <div className="image mt-3">
+
+
+
+    </div>
+
 
 
       </>
