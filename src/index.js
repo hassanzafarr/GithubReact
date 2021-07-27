@@ -24,16 +24,13 @@ ReactDOM.render(
 
 <Route  exact path="/" >  <Header/>
 
-<div className="body">
-    
-    <Row>
-        <Col>
+
 
          <Cards/> 
 
-     </Col>
-     </Row>
-     </div>   </Route>
+ 
+
+    </Route>
 
 <Route path="/login">   <Form/> </Route>
 

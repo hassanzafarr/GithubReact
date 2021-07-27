@@ -92,13 +92,15 @@ const Cards = () =>{
   ];
 
 
-const renderCard = (card, index) => {
+const Render = (card, index) => {
 const classes = useStyles();
   return (
 
+     <div className={classes.root}>
        
 
     <Card key={index}  className="card">
+
  
           <CardActionArea>
             <CardMedia
@@ -116,9 +118,11 @@ const classes = useStyles();
               </Typography>
             </CardContent>
           </CardActionArea>
+   
         </Card>
 
-
+        </div>  
+       
 
   )
 }
@@ -128,7 +132,7 @@ return(
   <div className="cardContainer">
   
     
-  {cardInfo.map(renderCard)}
+  {cardInfo.map(Render)}
   </div>
 )
 }
