@@ -7,6 +7,8 @@ import Header from './components/header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Link, Switch , Redirect } from "react-router-dom";
 import Form from "./components/login/Form";
+import Cards from "./components/card/card";
+import {Row , Col} from "react-bootstrap";
 
 
 
@@ -20,7 +22,18 @@ ReactDOM.render(
 
 
 
-<Route  exact path="/" >  <Header/>   </Route>
+<Route  exact path="/" >  <Header/>
+
+<div className="body">
+    
+    <Row>
+        <Col>
+
+         <Cards/> 
+
+     </Col>
+     </Row>
+     </div>   </Route>
 
 <Route path="/login">   <Form/> </Route>
 
