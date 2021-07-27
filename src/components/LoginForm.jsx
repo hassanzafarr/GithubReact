@@ -3,12 +3,13 @@ import React, {useState} from 'react';
 
 function LoginForm({ Login, error }) {
     const [details, setDetails] = useState({name:"", email:"", password:""});
-    const submitHandler = e => {
-        e.preventDefault();
-        Login(details);
-    }
+    // const submitHandler = e => {
+    //     e.preventDefault();
+    //     Login(details);
+    // }
+    // onSubmit={submitHandler}
     return (
-        <form onSubmit={submitHandler}>
+        <form  action="/">
             <div className="form-inner">
               <h2>Login</h2>  
               {(error != "") ? (<div className="error">{ error }</div>) : ""}

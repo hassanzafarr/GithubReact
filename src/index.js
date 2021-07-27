@@ -2,23 +2,36 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Hello from './hello';
+import reportWebVitals from "./reportWebVitals";
 import Header from './components/header'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Form from './components/LoginForm'
+import { BrowserRouter, Route, Link, Switch , Redirect } from "react-router-dom";
+import Login from "./components/LoginForm";
 
 
 
+
+const rootElement = document.getElementById("root");
 
 ReactDOM.render(
-  <React.StrictMode>
-     <Header/> 
+ <BrowserRouter>
+ 
+ <Switch>
 
-    <App /> 
 
-  </React.StrictMode>,
-  document.getElementById('root')
+
+<Route  exact path="/" >  <Header/>   </Route>
+
+<Route path="/login">   <Form/> </Route>
+
+
+<Redirect to="/" />
+
+ </Switch>
+
+ </BrowserRouter>,
+ rootElement
 );
-
+reportWebVitals();
 

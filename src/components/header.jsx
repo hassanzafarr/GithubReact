@@ -1,5 +1,6 @@
 import React from "react";
 import * as BootStrap from "react-bootstrap";
+import { BrowserRouter, Route, Link, NavLink } from "react-router-dom";
 
 function Header(){
 
@@ -45,8 +46,9 @@ function Header(){
 
         </BootStrap.Navbar.Collapse>
         
-        <BootStrap.Nav.Link href="#action1">Login</BootStrap.Nav.Link>
-      
+        {/* <BootStrap.Nav.Link href="#action1"><Link to="/login">Login</Link></BootStrap.Nav.Link> */}
+
+        <NavLink className="nav-link" to="/login"  style={{textDecoration:'none'}}  >LOGIN</NavLink>
 
         </div>
       </BootStrap.Navbar>
