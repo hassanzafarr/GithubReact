@@ -113,3 +113,16 @@ form .form-inner input[type="submit"]:hover {
   bottom: -8px;
   color:#666;
 }
+.header-css{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image{
+  background-image: url("../src/img/Capture.PNG");
+  width: 100%;
+  height: 16.2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}

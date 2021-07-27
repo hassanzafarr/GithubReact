@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+import LoginForm from "./LoginForm";
 
 function Form() {
+
     
         const adminUser = {
             email : "admin@admin.com",
@@ -26,6 +28,7 @@ function Form() {
           const Logout = () => { 
             setUser({name : "",email:""});
           }
+          
           return (
             <div className="App">
               {(user.email != "") ? 
@@ -41,4 +44,4 @@ function Form() {
     )
 }
 
-export default Form
+export default Form;
