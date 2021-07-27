@@ -5,9 +5,8 @@ import App from './App';
 import reportWebVitals from "./reportWebVitals";
 import Header from './components/header'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Form from './components/LoginForm'
 import { BrowserRouter, Route, Link, Switch , Redirect } from "react-router-dom";
-import Login from "./components/LoginForm";
+import Form from "./components/login/Form";
 
 
 
