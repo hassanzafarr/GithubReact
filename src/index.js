@@ -19,7 +19,9 @@ ReactDOM.render(
       <Route exact path="/">
         {" "}
         <Header />
+        
         <Cards />
+
         <FooterPage/>
       </Route>
 

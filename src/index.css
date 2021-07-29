@@ -22,3 +22,14 @@
   display: flex !important;
   flex-direction: row !important;
 }
+/* .MuiGrid-container{
+  width: auto !important;
+  margin-left: 230px;
+  margin-top: 50px;
+} */
+.makeStyles-root-1{
+  margin-top: 3%;
+}
+.MuiGrid-container{
+
+}

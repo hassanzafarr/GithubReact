@@ -7,8 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import {Row , Col} from "react-bootstrap";
-
+import { Grid } from "@material-ui/core";
 
 
 
@@ -16,13 +15,10 @@ import {Row , Col} from "react-bootstrap";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 300,
-    minWidth:300,
-    justifyContent:'center'
-  },
-  media: {
-    height: 10,
-  },
+    maxWidth: 430,
+
+  }
+
 });
 const Cards = () =>{
   const cardInfo = [
@@ -99,27 +95,34 @@ const classes = useStyles();
      <div className={classes.root}>
        
 
-    <Card key={index}  className="card">
-
- 
-          <CardActionArea>
-            <CardMedia
-            component="img"
-            image ={card.image} style={{height:100 ,width:230}}
-            
-            title={card.title}/>
-            
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                {card.title}
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                {card.text}
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-   
-        </Card>
+       <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          alt="Contemplative Reptile"
+          height="140"
+          image="/static/images/cards/contemplative-reptile.jpg"
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Lizard
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+            across all continents except Antarctica
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
+    </Card>
 
         </div>  
        
@@ -129,11 +132,15 @@ const classes = useStyles();
 return(
 
 
-  <div className="cardContainer">
-  
+  <Grid container spacing={1}
+  alignItems="center"
+  justifyContent="space-around" item xs={12} spacing={3}>
+
     
   {cardInfo.map(Render)}
-  </div>
+
+
+  </Grid>
 )
 }
 export default Cards;
