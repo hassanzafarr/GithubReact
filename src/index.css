@@ -28,8 +28,12 @@
   margin-top: 50px;
 } */
 .makeStyles-root-1{
-  margin-top: 3%;
+  margin-top: 3%; 
 }
 .MuiGrid-container{
-
+  justify-content: center;
+  align-items: center !important;
+  width: auto !important;
+  margin-left: 10px;
+  margin-right: 10px;
 }

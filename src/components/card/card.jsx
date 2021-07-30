@@ -9,138 +9,125 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { Grid } from "@material-ui/core";
 
-
-
-
-
 const useStyles = makeStyles({
   root: {
     maxWidth: 430,
-
-  }
-
+  },
 });
-const Cards = () =>{
+const Cards = () => {
   const cardInfo = [
-    
     {
-      image:"../../img/download.jpg",
+      image: "../../img/download.jpg",
       title: "Upload A File ",
       text: "Csv,Cls ",
     },
     {
-      image:"https://www.facebook.com/images/fb_icon_325x325.png",
+      image: "https://www.facebook.com/images/fb_icon_325x325.png",
       title: "Second Card ",
       text: "Third Card",
     },
-   
+
     {
-      image:"https://pics.freeicons.io/uploads/icons/png/17409946451553073813-512.png",
+      image:
+        "https://pics.freeicons.io/uploads/icons/png/17409946451553073813-512.png",
       title: "Upload A File ",
       text: "Csv,Cls ",
     },
     {
-      image:"https://www.facebook.com/images/fb_icon_325x325.png",
+      image: "https://www.facebook.com/images/fb_icon_325x325.png",
       title: "Second Card ",
       text: "Third Card",
     },
     {
-      image:"https://pics.freeicons.io/uploads/icons/png/17409946451553073813-512.png",
+      image:
+        "https://pics.freeicons.io/uploads/icons/png/17409946451553073813-512.png",
       title: "Upload A File ",
       text: "Csv,Cls ",
     },
     {
-      image:"https://www.facebook.com/images/fb_icon_325x325.png",
+      image: "https://www.facebook.com/images/fb_icon_325x325.png",
       title: "Second Card ",
       text: "Third Card",
     },
     {
-      image:"https://pics.freeicons.io/uploads/icons/png/17409946451553073813-512.png",
+      image:
+        "https://pics.freeicons.io/uploads/icons/png/17409946451553073813-512.png",
       title: "Upload A File ",
       text: "Csv,Cls ",
     },
     {
-      image:"https://www.facebook.com/images/fb_icon_325x325.png",
+      image: "https://www.facebook.com/images/fb_icon_325x325.png",
       title: "Second Card ",
       text: "Third Card",
     },
     {
-      image:"https://pics.freeicons.io/uploads/icons/png/17409946451553073813-512.png",
+      image:
+        "https://pics.freeicons.io/uploads/icons/png/17409946451553073813-512.png",
       title: "Upload A File ",
       text: "Csv,Cls ",
     },
     {
-      image:"https://www.facebook.com/images/fb_icon_325x325.png",
+      image: "https://www.facebook.com/images/fb_icon_325x325.png",
       title: "Second Card ",
       text: "Third Card",
     },
     {
-      image:"https://pics.freeicons.io/uploads/icons/png/17409946451553073813-512.png",
+      image:
+        "https://pics.freeicons.io/uploads/icons/png/17409946451553073813-512.png",
       title: "Upload A File ",
       text: "Csv,Cls ",
     },
     {
-      image:"https://www.facebook.com/images/fb_icon_325x325.png",
+      image: "https://www.facebook.com/images/fb_icon_325x325.png",
       title: "Second Card ",
       text: "Third Card",
     },
-    
   ];
 
-
-const Render = (card, index) => {
-const classes = useStyles();
+  const Render = (card, index) => {
+    const classes = useStyles();
+    return (
+      <div className={classes.root}>
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              alt="Contemplative Reptile"
+              height="140"
+              image=""
+              title="Contemplative Reptile"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                Lizard
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              Share
+            </Button>
+            <Button size="small" color="primary">
+              Learn More
+            </Button>
+          </CardActions>
+        </Card>
+      </div>
+    );
+  };
   return (
-
-     <div className={classes.root}>
-       
-
-       <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Contemplative Reptile"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
-
-        </div>  
-       
-
-  )
-}
-return(
-
-
-  <Grid container spacing={1}
-  alignItems="center"
-  justifyContent="space-around" item xs={12} spacing={3}>
-
-    
-  {cardInfo.map(Render)}
-
-
-  </Grid>
-)
-}
+    <Grid
+      container
+      spacing={1}
+      alignItems="center"
+      justifyContent="space-around"
+    >
+      {cardInfo.map(Render)}
+    </Grid>
+  );
+};
 export default Cards;
