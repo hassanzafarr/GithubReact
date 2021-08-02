@@ -12,9 +12,13 @@ import { Grid } from "@material-ui/core";
 const useStyles = makeStyles({
   root: {
     maxWidth: 430,
+    marginTop:'3%',
+    width:'80%'
   },
 });
 const Cards = () => {
+
+  
   const cardInfo = [
     {
       image: "../../img/download.jpg",
@@ -24,7 +28,7 @@ const Cards = () => {
     {
       image: "https://www.facebook.com/images/fb_icon_325x325.png",
       title: "Second Card ",
-      text: "Third Card",
+      text: "adadadjajidijausdjiadjiuwqauijijwuiu",
     },
 
     {
@@ -53,7 +57,7 @@ const Cards = () => {
       image:
         "https://pics.freeicons.io/uploads/icons/png/17409946451553073813-512.png",
       title: "Upload A File ",
-      text: "Csv,Cls ",
+      text: "asidioasjasdjiuodasjuidasujidsauijsadjjsad",
     },
     {
       image: "https://www.facebook.com/images/fb_icon_325x325.png",
@@ -94,18 +98,19 @@ const Cards = () => {
               component="img"
               alt="Contemplative Reptile"
               height="140"
-              image=""
-              title="Contemplative Reptile"
+              image={card.image}
+              title={card.title}
             />
+
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                Lizard
+                {card.title}
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+              {card.text}
               </Typography>
             </CardContent>
+
           </CardActionArea>
           <CardActions>
             <Button size="small" color="primary">
